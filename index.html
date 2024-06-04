@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Opiniones Globales</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        body {
+            text-align: justify;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        header h1 {
+            font-family: serif;
+            font-size: 4em;
+            color: darkred;
+            margin: 0;
+        }
+
+        header img.header-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        nav {
+            background-color: rgb(47, 44, 44);
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(74, 71, 71);
+            border-radius: 4px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .section-container {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h3.gastronomia, h3.peliculas, h3.series, h3.libros, h3.funny, h3.mas {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        h3.gastronomia { color: darkgreen; }
+        h3.peliculas { color: cadetblue; }
+        h3.series { color: burlywood; }
+        h3.libros { color: lightsalmon; }
+        h3.funny { color: plum; }
+        h3.mas { color: palevioletred; }
+
+        p, ul {
+            margin: 20px 0;
+        }
+
+        table {
+            justify-content: center;
+            display: flex;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        footer img {
+            width: 100px;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        footer h2, footer p, footer address {
+            margin: 5px 0;
+        }
+
+        .relevante {
+            font-style: italic;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header id="Header">
+        <h1>Opinando</h1>
+        <img src="https://i.pinimg.com/originals/af/ad/0a/afad0afe3c58867a3af9a4f8560c8dab.jpg" alt="pensando" class="header-image">
+    </header>
+    <p id="descripcion">Este sitio web trata sobre opiniones y gustos personales de diferentes cosas, por ejemplo, de comidas, películas, etc.</p>
+    <nav>
+        <ul>
+            <li><a href="#food">Gastronomia</a></li>
+            <li><a href="#pelis">Peliculas</a></li>
+            <li><a href="#tvshow">Series</a></li>
+            <li><a href="#books">Libros</a></li>
+            <li><a href="#fun">Entretenimiento</a></li>
+            <li><a href="#more">Mas</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="main-content">
+            <div class="section-container">
+                <section>
+                    <h3 class="gastronomia" id="food">Gastronomia</h3>
+                    <p>Reseñas, opiniones y recomendaciones de diferentes tipos de comidas que he probado</p>
+                    <ul>
+                        <li>Comida Salada</li>
+                        <p>Soy colombiana, y la comida de mi país es deliciosa. Si a ti te interesa la comida colombiana, te sugiero revisar el siguiente link:</p>
+                        <a target="_blank" href="https://www.directoalpaladar.com/recetario/11-mejores-recetas-cocina-colombiana">Recomendaciones comida colombiana</a>
+                        <li>Postres</li>
+                        <p>Algunas comidas que me gustaría probar, en este caso postres, serían los asiáticos. Aunque no he tenido el gusto de probarlos, específicamente los japoneses, te dejo un link para que también te antojes:</p>
+                        <a target="_blank" href="https://makitake.es/postres-japoneses/">Postres Japoneses</a>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="peliculas" id="pelis">Peliculas</h3>
+                    <p>Reseñas, opiniones y recomendaciones de películas de diferentes géneros que he visto</p>
+                    <ul>
+                        <li>Terror y Suspenso</li>
+                        <p>Personalmente, mi género favorito son las películas de terror, siempre buscando esa sensación de miedo y de sorpresa que te dan, sobre todo aquellas que son tipo documental. Te comparto un link para que veas una película de este estilo recomendada por mí:</p>
+                        <a target="_blank" href="https://youtu.be/w1UdTVpJ7GM?si=HxjvjXoe6bxbYWyS">Película de Terror</a>
+                        <p class="importante">Recomendación: si este tipo de películas no te gustan, no abrir link. La película está en inglés, activar subtítulos.</p>
+                        <li>Comedia y Humor Negro</li>
+                        <li>Románticas</li>
+                        <li>Drama y Trágicas</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="series" id="tvshow">Series</h3>
+                    <p>Reseñas, opiniones y recomendaciones de series de diferentes géneros que he visto</p>
+                    <ul>
+                        <li>Terror y Suspenso</li>
+                        <li>Comedia y Humor Negro</li>
+                        <li>Románticas</li>
+                        <li>Drama y Trágicas</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="libros" id="books">Libros</h3>
+                    <p>Reseñas, opiniones y recomendaciones de libros de diferentes géneros que he leído</p>
+                    <ul>
+                        <li>Terror y Suspenso</li>
+                        <li>Drama/Tragedias</li>
+                        <li>Cómicos</li>
+                        <li>Basados en Hechos Reales/Biografías</li>
+                        <p>Aunque no soy una persona de leer, tengo algunos favoritos que se han ganado mi corazón. Uno de ellos es "Maleducada" del escritor colombiano <a href="#autor1">Antonio Ortiz</a>. Este libro trata sobre la biografía de la vida de una adolescente colombiana, su historia es bastante fuerte, y deja una enseñanza muy linda a mi opinión. A continuación, link del preview por si te interesa:</p>
+                        <a target="_blank" href="https://www.everand.com/read/487584923/Maleducada">Preview Libro "Maleducada"</a>
+                        <li>Autores</li>
+                        <p id="autor1">Antonio Ortiz</p>
+                        <a target="_blank" href="https://www.antonioortiz.com.co">Conoce más sobre este escritor colombiano</a>
+                        <li>Otros Géneros</li>
+                    </ul>
+                </section>
+                <section>
+                   
+
+                    <h3 class="funny" id="fun">Entretenimiento</h3>
+                    <p>Recomendaciones de actividades, videos, etc. de entretenimiento según mi gusto personal</p>
+                    <ul>
+                        <li>General</li>
+                        <p>Como ya sabemos, la actividad física es sumamente importante para nuestro día a día. Aunque esto puede causar pereza, te recomiendo intentar con una actividad que además de ser saludable, te divierta. Por eso te recomiendo intentar con zumba, ya que estás en constante movimiento y no se hace monótono o aburrido. En YouTube puedes encontrar muchos videos y canales de esto. A continuación, te dejo un link de canales que puedes intentar y que personalmente me gustan:</p>
+                        <a target="_blank" href="https://www.youtube.com/@SaerJose">Saer Jose</a>
+                        <p>o también</p>
+                        <a target="_blank" href="https://www.youtube.com/@TheFitnessMarshall">The Fitness Marshall</a>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="mas" id="more">Más</h3>
+                    <p>Opiniones personales sobre temas "polémicos"</p>
+                    <ul>
+                        <li>Pro Aborto vs Pro Vida</li>
+                        <p>Uno de los temas que más se comentan en redes sociales y en general, es el tema del aborto. Aquí te dejo un artículo para que te informes:</p>
+                        <a target="_blank" href="https://www.researchgate.net/publication/351348854_PRO_ABORTO_VS_PRO_VIDA_UNA_DISCUSION_FRENTE_A_LA_MORAL">Artículo</a>
+                    </ul>
+                </section>
+                <h5>Géneros en Común</h5>
+                <table>
+                    <tr>
+                        <th>Películas</th>
+                        <th>Series</th>
+                        <th>Libros</th>
+                    </tr>
+                    <tr>
+                        <td>Terror</td>
+                        <td>Terror</td>
+                        <td>Terror</td>
+                    </tr>
+                    <tr>
+                        <td>Comedia</td>
+                        <td>Comedia</td>
+                        <td>Comedia</td>
+                    </tr>
+                    <tr>
+                        <td>Dramas</td>
+                        <td>Dramas</td>
+                        <td>Dramas</td>
+                    </tr>
+                </table>
+                <article>
+                    <h6>Opinión</h6>
+                    <p id="articulo">Que en la sociedad actual se <strong><em>priorice aún más el respeto y los modales básicos</em></strong>. No está totalmente generalizado, y más en las generaciones nuevas e incluso en las generaciones antiguas. Por un lado, las generaciones nuevas tienen una deficiencia en modales básicos y las generaciones antiguas tienen una deficiencia en respetar opiniones y gustos de los demás.</p>
+                    <section>
+                        <h4>¿Cómo mejorar esto?</h4>
+                        <ul>
+                            <li>Cada vez que vemos una falta de respeto, corregir</li>
+                            <li>Educar a nuestra generación más joven, por ejemplo, recordarles saludar, agradecer y pedir el favor</li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <aside>
+            <p class="relevante">Esta página es sumamente de uso de entretenimiento, pasatiempo e institucional, no tomarse a pecho las opiniones compartidas.</p>
+        </aside>
+    </div>
+    <footer>
+        <h2>Autor</h2>
+        <p>Creado por: Simona Ortega Parra</p>
+        <img src="https://i.pinimg.com/originals/96/a8/cd/96a8cd08057b94587fc3669df4136c7c.jpg" alt="Imagen que me representa como autora del sitio web">
+        <h2>Contacto</h2>
+        <address>
+            <ul>
+                <li>Email: simonaaparraa@gmail.com</li>
+                <li>Teléfono: +57 321 9793326</li>
+            </ul>
+        </address>
+        <h2>Institución</h2>
+        <p>Skolmi</p>
+        <h2>Todos los derechos reservados</h2>
+    </footer>
+</body>
+</html>
